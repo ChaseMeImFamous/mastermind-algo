@@ -1,6 +1,143 @@
-body
-{
-    background:#eee;
-    font-family:Helvetica,Arial;
-    font-size:14px;
+html,
+body {
+    font-family: Lato, Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    background: #004C79;
+}
+#container{
+    position: relative;
+    margin: 0 auto;
+    padding: 5px;
+    margin-top: 50px;
+    width: 400px;
+    background-color: #C43829;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#title {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 395px;
+    vertical-align: middle;
+    text-align: center;
+    color: #ececec;
+    font-size: 30px;
+    text-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.row {
+    position: relative;
+    width: 395px;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.guess-1,
+.guess-2,
+.guess-3,
+.guess-4 {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 7px;
+    background-color: #ececec;
+    vertical-align: middle;
+    text-align: left;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.ans-1,
+.ans-2,
+.ans-3,
+.ans-4 {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    background-color: #222222;
+    margin-left: 7px;
+    vertical-align: middle;
+    text-align: left;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.check {
+    margin-left: 15px;
+    padding: 2px;
+    border-radius: 7px;
+    border: 2px solid lightgreen;
+    background-color: transparent;
+    color: lightgreen;
+    vertical-align: middle;
+    text-align: left;
+    visibility: hidden;
+}
+
+.check:hover {
+    background-color: lightgreen;
+    color: white;
+}
+
+.colors {
+    width: 395px;
+    height: 30px;
+    display: block;
+    margin: 10px auto;
+}
+
+.brown,
+.black,
+.red,
+.orange,
+.yellow,
+.green,
+.blue,
+.purple {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    display: inline-block;
+    margin: 10px;
+    margin-top: 20px;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.brown {
+    background-color: #45362E;
+}
+
+.black {
+    background-color: #131A1E;
+}
+
+.red {
+    background-color: rgba(231, 76, 60,1.0);
+}
+
+.orange {
+    background-color: rgba(211, 84, 0,1.0);
+}
+
+.yellow {
+    background-color: rgba(241, 196, 15,1.0);
+}
+
+.green {
+    background-color: rgba(46, 204, 113,1.0);
+}
+
+.blue {
+    background-color: rgba(52, 152, 219,1.0);
+}
+
+.purple {
+    background-color: rgba(142, 68, 173,1.0);
 }
