@@ -1,5 +1,16 @@
-# MASTERMIND
-
+                                                                                            
+                                                                                            
+  M       E     M      INDM   ERMINDM  TERMIND  STERMI    S       M  T   I     T  MINDM     
+  ND     RM    AST    N    TE    D     R        E     M   ER     AS  R   DM    R  N    T    
+  M      IN    T R    M     M    A     I        M     S   M      TE  I   A T   I  M     M   
+  S E   N M    R I    ST         T     D        N     E   N M   E M  D   T R   D  S     N   
+  E M   M S   M   M    RMI       R     ASTERMI  M     M   M S   M N  A   R  N  A  E     M   
+  M  D A  E   N   S       MA     I     T        STERMI    S  R I  M  T   I  M  T  M     S   
+  N  A T  M  DMASTER        E    D     R        E   N     E  I D  S  R   D   T R  N     E   
+  M  TER  N  A     I  M     M    A     I        M    A    M  DMA  E  I   A   R I  M     M   
+  S   M   M S       M S     N    T     D        N    T    N   S   M  D   T    ND  S    I    
+  E   N   S E       S  RMIND     R     ASTERMI  M     M   M   E   N  A   R     A  ERMIN     
+                                                                                            
 
 
 ## Règles du jeu
