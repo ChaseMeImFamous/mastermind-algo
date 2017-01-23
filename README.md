@@ -1,9 +1,6 @@
-                                                                                            
-                                                                                            
 # Mastermind
-Le classique des jeux de société revisité !
-------
-                                                                                            
+
+### Le classique des jeux de société revisité !                                             
 
 
 ## Règles du jeu
