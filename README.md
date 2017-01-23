@@ -21,6 +21,6 @@ Deux situations terminent la partie :
 3. Paul Esdoluc
 4. Lisa Fises
 5. Antoine Turpin
-## History
-* La maquette Front est implantée
-* Le jeu est implanté
+## Historique
+1. La maquette Front est implantée
+2. Le jeu est implanté
