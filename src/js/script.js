@@ -14,10 +14,9 @@ $(document).ready(function () {
     var colorCounter; // Variable tampon : affecte la couleur aux variables au dessus lors du click and drop !
     var color; // Variable tampon : affecte le css aux cases lors du click and drop !
     var randomCode; // Variable générée : affecte la combinaison secrète !
-    do {
+    do { 
         randomCode = [colors[Math.floor(Math.random() * colors.length)], colors[Math.floor(Math.random() * colors.length)], colors[Math.floor(Math.random() * colors.length)], colors[Math.floor(Math.random() * colors.length)]];
-    } while (checkIfArrayIsUnique(randomCode) == false);
-    console.log(randomCode);
+    } while (checkIfArrayIsUnique(randomCode) == false); // Randomisation de la combinaison et vérification qu'il n'y ait pas plusieurs cases de la même couleur !
     createLine(); // Fonction de création de ligne
     for (i = 0; i < colors.length; i++) { // Boucle pour faire apparaitre les couleurs
         var colorsDiv = '<div class="' + colors[i] + ' selection"></div>';
