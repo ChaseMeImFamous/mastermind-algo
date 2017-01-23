@@ -5,12 +5,16 @@
 
 ## Règles du jeu
 Avant de démarrer la partie, l'ordinateur va placer des pions de couleurs (parmi celles
-proposées) derrière un cache pour éviter que le joueur ne voie les pions choisis.
-Le but est de retrouver quels sont les 4 pions choisis par ce joueur et d'en connaître les
-positions, et tout cela en 12 manches !
+proposées) de manière aléatoire !
+
+Le but est de retrouver quels sont les 4 pions choisis aléatoirement et d'en connaître les
+positions.
+
 Pour cela, à chaque tour, le chercheur doit se servir des pions de couleurs pour former une
 rangée et se rapprocher le plus possible de la solution (ou de la trouver) car le nombre de
-rangées pour trouver la solution est limité. Une fois les pions placés, l'ordinateur indiquera :
+rangées pour trouver la solution est limité à 12.
+
+Une fois les pions placés, l'ordinateur indiquera :
 1. le nombre de pions de bonne couleur bien placés en utilisant les petits pions rouges
 (ou noirs selon les versions du jeu);
 2. le nombre de pions de bonne couleur mais mal placés avec les petits pions blancs.
