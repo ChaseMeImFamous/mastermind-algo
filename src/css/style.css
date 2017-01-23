@@ -7,32 +7,31 @@ body {
     text-align: center;
     background: #004C79;
 }
-#container{
+
+#container {
     position: relative;
     margin: 0 auto;
-    padding: 5px;
+    padding: 20px;
     margin-top: 50px;
     width: 400px;
     background-color: #C43829;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 #title {
     position: relative;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
     margin-bottom: 10px;
-    width: 395px;
     vertical-align: middle;
     text-align: center;
     color: #ececec;
     font-size: 30px;
-    text-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    text-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
 .row {
     position: relative;
-    width: 395px;
     height: 30px;
     display: block;
     margin: 10px auto;
@@ -51,22 +50,22 @@ body {
     background-color: #ececec;
     vertical-align: middle;
     text-align: left;
-    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
 .ans-1,
 .ans-2,
 .ans-3,
 .ans-4 {
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
     border-radius: 100%;
     display: inline-block;
     background-color: #222222;
     margin-left: 7px;
     vertical-align: middle;
     text-align: left;
-    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    box-shadow: 0 3.5px 7px rgba(0, 0, 0, 0.25), 0 2.5px 2.5px rgba(0, 0, 0, 0.22);
 }
 
 .check {
@@ -78,7 +77,19 @@ body {
     color: lightgreen;
     vertical-align: middle;
     text-align: left;
-    visibility: hidden;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
+}
+
+.delete {
+    margin-left: 15px;
+    padding: 2px;
+    border-radius: 7px;
+    border: 2px solid yellow;
+    background-color: transparent;
+    color: yellow;
+    vertical-align: middle;
+    text-align: left;
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
 
 .check:hover {
@@ -86,11 +97,13 @@ body {
     color: white;
 }
 
-.colors {
-    width: 395px;
-    height: 30px;
-    display: block;
-    margin: 10px auto;
+.delete:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.selected {
+    border: 1.5px solid white;
 }
 
 .brown,
@@ -101,15 +114,14 @@ body {
 .green,
 .blue,
 .purple {
-    height: 20px;
-    width: 20px;
+    height: 35px;
+    width: 35px;
     border-radius: 100%;
     display: inline-block;
-    margin: 10px;
+    margin-left: 7px;
     margin-top: 20px;
-    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+    box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px rgba(0, 0, 0, 0.22);
 }
-
 .brown {
     background-color: #45362E;
 }
@@ -119,25 +131,72 @@ body {
 }
 
 .red {
-    background-color: rgba(231, 76, 60,1.0);
+    background-color: rgba(231, 76, 60, 1.0);
 }
 
 .orange {
-    background-color: rgba(211, 84, 0,1.0);
+    background-color: rgba(211, 84, 0, 1.0);
 }
 
 .yellow {
-    background-color: rgba(241, 196, 15,1.0);
+    background-color: rgba(241, 196, 15, 1.0);
 }
 
 .green {
-    background-color: rgba(46, 204, 113,1.0);
+    background-color: rgba(46, 204, 113, 1.0);
 }
 
 .blue {
-    background-color: rgba(52, 152, 219,1.0);
+    background-color: rgba(52, 152, 219, 1.0);
 }
 
 .purple {
-    background-color: rgba(142, 68, 173,1.0);
+    background-color: rgba(142, 68, 173, 1.0);
+}
+
+
+#end {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222222;
+    color: whitesmoke;
+    font-size: 20px;
+    padding: 10px;
+    opacity: 0.98;
+}
+
+#yes,
+#no {
+    z-index: 10000;
+    position: absolute;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    top: 50%;
+    width: 25%;
+}
+
+.replay {
+    z-index: 10000;
+    position: absolute !important;
+    background-color: rgba(211, 84, 0, 1.0) !important;
+    width: 50% !important;
+}
+
+#yes {
+    background-color: green;
+    left: 25%;
+}
+
+#no {
+    background-color: red;
+    right: 25%;
+}
+
+.text {
+    position: relative;
+    top: 20%;
 }
