@@ -183,8 +183,13 @@ $(document).ready(function () {
                                                                                 Click de suppression de ligne
                                                                     *****************************************************/
     $(document).on('click','.delete', function(){
-        next(); // Ré-initialisation des compteurs
-        $(this).parent().children('div[class*="guess"]').css('background-color', '#ececec'); // Enlève les couleurs
+        if ($(this).parent().is(':nth-child(' + usedLives + ')')) { // Vérifie si on est sur la bonne ligne
+            next(); // Ré-initialisation des compteurs
+            $(this).parent().children('div[class*="guess"]').css('background-color', '#ececec'); // Enlève les couleurs
+        }
+        else {
+            return false; 
+        }
     });
                                                                     /*****************************************************
                                                                                 Click de suppresion de ligne

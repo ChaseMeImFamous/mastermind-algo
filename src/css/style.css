@@ -166,12 +166,12 @@ body {
     color: whitesmoke;
     font-size: 20px;
     padding: 10px;
-    opacity: 0.92;
+    opacity: 0.95;
 }
 
 #yes,
 #no {
-    z-index: 10000;
+    cursor: pointer;
     position: absolute;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -180,19 +180,19 @@ body {
 }
 
 .replay {
-    z-index: 10000;
+    cursor: pointer;
     position: absolute !important;
     background-color: rgba(211, 84, 0, 1.0) !important;
     width: 50% !important;
 }
 
 #yes {
-    background-color: green;
+    background-color: darkgreen;
     left: 25%;
 }
 
 #no {
-    background-color: red;
+    background-color: darkred;
     right: 25%;
 }
 
