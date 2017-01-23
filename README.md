@@ -26,7 +26,7 @@ Deux situations terminent la partie :
 
 ## Contributeurs
 1. Kévin Brillion
-2. Quang-Tu Dinh
+2. Quang-Tuyen Dinh
 3. Paul Esdoluc
 4. Lisa Fises
 5. Antoine Turpin
