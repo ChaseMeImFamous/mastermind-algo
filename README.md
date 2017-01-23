@@ -1,5 +1,4 @@
-<![CDATA[
-# ${1:MASTERMIND}
+# MASTERMIND
 
 ## Règles du jeu
 Avant de démarrer la partie, l'ordinateur va placer des pions de couleurs (parmi celles
@@ -25,4 +24,3 @@ Deux situations terminent la partie :
 ## History
 * La maquette Front est implantée
 * Le jeu est implanté
-]]>
